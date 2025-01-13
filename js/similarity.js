@@ -1,19 +1,14 @@
 const modelPath = 'models';
 let labeledFaceDescriptors;
 
-function similarityFromDistance(distance, maxDistance = Math.sqrt(2)) {
-  return (1 - distance / maxDistance) * 100;
-}
-
 async function compareImages() {
   const img1 = document.getElementById('img1');
   const detection0 = await faceapi.detectSingleFace(img1).withFaceLandmarks().withFaceDescriptor();
   const img2 = document.getElementById('img2');
   const detection1 = await faceapi.detectSingleFace(img2).withFaceLandmarks().withFaceDescriptor();
   const distance = faceapi.euclideanDistance(detection0.descriptor, detection1.descriptor);
-  const similarity = similarityFromDistance(distance);
-  const similarityParagraph = document.getElementById('similarity');
-  similarityParagraph.innerText = `Similarity: ${similarity}`
+  const distanceParagraph = document.getElementById('distance');
+  distanceParagraph.innerText = `Distance: ${distance.toFixed(2)}`
 }
 
 (async () => {
