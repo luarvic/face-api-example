@@ -1,6 +1,6 @@
-# Face detection and recognition from a webcam in a browser
+# Face detection and recognition from a webcam in a web browser
 
-This app detects and recognizes individuals listed under `.\labeled_images` from a webcam in a browser using the JavaScript library [face-api.js](https://github.com/justadudewhohacks/face-api.js).
+This app detects and recognizes individuals listed under `.\labeled_images` from a webcam in a web browser using [face-api.js](https://github.com/justadudewhohacks/face-api.js) JavaScript library.
 
 ## How to run it locally
 
