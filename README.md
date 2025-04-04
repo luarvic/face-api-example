@@ -14,6 +14,6 @@ This app detects and recognizes individuals listed under `.\labeled_images` from
 1. Add the image name (without extension) to `labels` array in `.\js\face-detection.js`.
 1. Refresh `index.html` page in a web browser.
 
-## Click to Watch Demo
+## Demo
 
-[![Watch Demo](./images/demo.jpg)](https://www.linkedin.com/posts/luarvic_playing-with-face-recognition-i-hope-trump-activity-7270601090570629120-7nq1)
+![Demo](./images/demo.jpg)
